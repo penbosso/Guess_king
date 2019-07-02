@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Classic">
+
+    <TextView
+        android:id="@+id/titleClassic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/classic"
+        android:textColor="#000"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Classic" />
+
+    <Button
+        android:id="@+id/quitButton"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="92dp"
+        android:background="@drawable/ic_replay_black_24dp"
+        app:layout_constraintEnd_toStartOf="@+id/titleClassic"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleClassic" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/roundText"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/roundText"
+        app:layout_constraintStart_toEndOf="@+id/quitButton"
+        app:layout_constraintTop_toBottomOf="@+id/titleClassic"
+        app:layout_constraintVertical_bias="1.0"
+        tools:text="Round:" />
+
+    <TextView
+        android:id="@+id/roundText"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/_scoreText"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView5"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="@+id/textView5"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/scoreText"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/scoreText"
+        app:layout_constraintStart_toEndOf="@+id/roundText"
+        app:layout_constraintTop_toTopOf="@+id/scoreText"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="Score:" />
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/_scoreText"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/titleClassic"
+        tools:text="0" />
+
+    <TextView
+        android:id="@+id/guessKingNumber"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/text_view_circle"
+        android:gravity="center"
+        android:text="?"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/you_ve_got_"
+        android:layout_width="385dp"
+        android:layout_height="89dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/you_ve_got_"
+        android:textAppearance="@style/you_ve_got_"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guessKingNumber" />
+
+    <!-- Rectangle -->
+    <TextView
+        android:id="@+id/guessbot_textView"
+        android:layout_width="190dp"
+        android:layout_height="74dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/predictor_rectangle"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/guessbot_predict"
+        android:textColor="#000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.958"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/you_ve_got_"
+        tools:text="Guessbot predict: 9" />
+
+    <Button
+        android:id="@+id/first_button"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/text_view_circle"
+        android:text="@string/_5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guessbot_textView" />
+
+    <Button
+        android:id="@+id/second_button"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/text_view_circle"
+        android:text="@string/_9"
+        app:layout_constraintStart_toEndOf="@+id/first_button"
+        app:layout_constraintTop_toBottomOf="@+id/guessbot_textView" />
+
+    <Button
+        android:id="@+id/third_button"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/text_view_circle"
+        android:text="@string/_7"
+        app:layout_constraintStart_toEndOf="@+id/second_button"
+        app:layout_constraintTop_toBottomOf="@+id/guessbot_textView" />
+
+    <Button
+        android:id="@+id/fourth_button"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/text_view_circle"
+        android:text="@string/_2"
+        app:layout_constraintStart_toEndOf="@+id/third_button"
+        app:layout_constraintTop_toBottomOf="@+id/guessbot_textView" />
+
+
+    <ImageView
+        android:id="@+id/play"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#888"
+        android:clickable="true"
+        android:paddingLeft="20dip"
+        android:paddingTop="25dp"
+        android:scaleType="center"
+        android:src="@drawable/ic_play_circle24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Guess King</string>
+    <string name="classic">Classic</string>
+    <string name="_scoreText">0</string>
+    <string name="roundText">Round:</string>
+    <string name="scoreText">Score:</string>
+    <string name="you_ve_got_">You’ve got 3 options, guess the digit, \norder of choice matters!</string>
+    <string name="guessbot_predict">Guessbot predict: 9</string>
+    <string name="_5">5</string>
+    <string name="_7">7</string>
+    <string name="_2">2</string>
+    <string name="_9">9</string>
+</resources>
