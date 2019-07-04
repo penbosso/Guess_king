@@ -2,7 +2,7 @@
     <string name="app_name">Guess King</string>
     <string name="classic">Classic</string>
     <string name="_scoreText">0</string>
-    <string name="roundText">Round:</string>
+    <string name="roundText">Rnd:</string>
     <string name="scoreText">Score:</string>
     <string name="you_ve_got_">You’ve got 3 options, guess the digit, \norder of choice matters!</string>
     <string name="guessbot_predict">Guessbot predict: 9</string>
@@ -10,4 +10,18 @@
     <string name="_7">7</string>
     <string name="_2">2</string>
     <string name="_9">9</string>
+    <string name="todo">TODO</string>
+    <string name="roundToLiveText">RTL:</string>
+    <string name="_3">3</string>
+    <string name="game_over">Game Over</string>
+    <string name="new_high_sc">Your New Score : </string>
+    <string name="you_are_the">You are the new Guess King</string>
+    <string name="menu">Menu</string>
+    <string name="classicMenu">Classic</string>
+    <string name="arcade">Arcade</string>
+    <string name="match">Match</string>
+    <string name="multi_player">Multi Player</string>
+    <string name="high_score">High Score</string>
+
+
 </resources>

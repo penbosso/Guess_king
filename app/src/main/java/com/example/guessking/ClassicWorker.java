@@ -11,6 +11,7 @@ public class ClassicWorker {
     private static int guessKingNumber;
     private static int randomInt;
     private static int guessBotNumber;
+    private static int score = 0, round = 1, timeToLive = 3;
 
     public static int getFirstNumber() {
         return firstNumber;
@@ -36,6 +37,30 @@ public class ClassicWorker {
         return guessBotNumber;
     }
 
+    public static int getScore() {
+        return score;
+    }
+
+    public static void setScore(int score) {
+        ClassicWorker.score = score;
+    }
+
+    public static int getRound() {
+        return round;
+    }
+
+    public static void setRound(int round) {
+        ClassicWorker.round = round;
+    }
+
+    public static int getTimeToLive() {
+        return timeToLive;
+    }
+
+    public static void setTimeToLive(int timeToLive) {
+        ClassicWorker.timeToLive = timeToLive;
+    }
+
     public static void generateNumbers(){
         ArrayList<Integer> digits = new ArrayList<>(10);
         for (int i = 0; i < 10; i++){
@@ -53,5 +78,23 @@ public class ClassicWorker {
 
         randomInt = 1 + (int)(Math.random()*4);
         guessBotNumber = digits.get(randomInt);
+    }
+
+    public static void evaluateGuess(int firstChoice, int secondChoice, int thirdChoice){
+        if(guessKingNumber == firstChoice) {
+            setScore(getScore() + 5);
+        }
+        else if(guessKingNumber == secondChoice) {
+            setScore(getScore() + 3);
+        }
+        else  if(guessKingNumber == thirdChoice) {
+            setScore(getScore() + 1);
+        }
+        else {
+            setTimeToLive(getTimeToLive() - 1);
+        }
+
+        setRound(getRound() + 1);
+
     }
 }
